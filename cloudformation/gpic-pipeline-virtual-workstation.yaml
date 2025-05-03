@@ -21,12 +21,12 @@ Resources:
             Statement:
               - Action: s3:GetObject
                 Effect: Allow
-                Resource: arn:aws:s3:::ec2-windows-nvidia-drivers/*
+                Resource: arn:aws-cn:s3:::ec2-windows-nvidia-drivers/*
               - Action:
                   - s3:ListAllMyBuckets
                   - s3:ListBucket
                 Effect: Allow
-                Resource: arn:aws:s3:::*
+                Resource: arn:aws-cn:s3:::*
               - Action: s3:*Object*
                 Effect: Allow
                 Resource:

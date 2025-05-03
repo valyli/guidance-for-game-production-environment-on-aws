@@ -21,13 +21,13 @@ class VirtualWorkstationStack(core.Stack):
     policy_statement_drivers = iam.PolicyStatement(
             effect=iam.Effect.ALLOW,
             actions=["s3:GetObject",],
-            resources=["arn:aws:s3:::ec2-windows-nvidia-drivers/*"]
+            resources=["arn:aws-cn:s3:::ec2-windows-nvidia-drivers/*"]
         )
 
     policy_statement_bucket_list = iam.PolicyStatement(
             effect=iam.Effect.ALLOW,
             actions=["s3:ListAllMyBuckets","s3:ListBucket"],
-            resources=["arn:aws:s3:::*"]
+            resources=["arn:aws-cn:s3:::*"]
         )
       
     policy_statement_bucket_object_actions = iam.PolicyStatement(
